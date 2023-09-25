@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injury Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Player Injury Prediction</h1>
+    <form id="predictionForm">
+        <label for="total_matches">Total Matches Last 30 Days:</label>
+        <input type="number" id="total_matches" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required><br><br>
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" required><br><br>
+        <label for="fitness_level">Fitness Level (1-10):</label>
+        <input type="number" id="fitness_level" required min="1" max="10"><br><br>
+        <button type="button" onclick="predictInjury()">Predict</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
